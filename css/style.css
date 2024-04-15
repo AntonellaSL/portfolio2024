@@ -1,387 +1,380 @@
-*{
-	box-sizing: border-box; /* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. 
+@import url(reset.css);
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. 
 	If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. 
 	https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry/borderBoxSize */
+
+/* ------------ PARAGRAPH, BACKGROUND AND TEXT STYLES ------------ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
-/* ------------ PARAGRAPH, BACKGROUND AND TEXT STYLES ------------ */ 
-
-img{ 
-	height:auto;
-	max-width:100%;
-	margin-bottom: 1rem;
+body {
+  background-color: #fffffa;
 }
 
-body{
-    background-color: #FFFFFA;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h1 {
+  font-family: "Unbounded", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 0;
 }
 
-h1{ 
-    font-family: "Unbounded", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3rem;
-    margin-bottom: 0;
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 0;
 }
 
-h2{
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem; 
-    margin-bottom: 0;
+h3 {
+  font-family: "Unbounded", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
-h3{
-    font-family: "Unbounded", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin-bottom: 0;
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #7c7c7c;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
 }
 
-h4{
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem; 
-    color: #7C7C7C; 
-    margin-bottom: 0;
-    margin-top: 0.5rem;
+h5 {
+  font-family: "Unbounded", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
-h5{
-    font-family: "Unbounded", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 0;
+p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #7c7c7c;
 }
 
-p{
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem; 
-    color: #7C7C7C; 
-}
-
-/* --------- NAV BAR --------- */ 
+/* --------- NAV BAR --------- */
 
 .navbar {
-	display: flex;
-    flex-direction: row;
-	justify-content: flex-end;
-	width: 100%;
-	margin: 0 auto;
-    padding: 1rem;
-	z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  z-index: 100;
 }
 
 .navbar a {
-	display: inline-block;
-    align-content: center;
-	color: #000000;
-	font-family: "Montserrat", sans-serif;
-	font-size: 1rem;
-	font-weight: 700;
-	text-decoration: none;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: auto;
-    padding: 1rem;
+  display: inline-block;
+  align-content: center;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  padding: 1rem;
 }
 
-.menu{
-    margin-right: auto;
-    display: flex;
-    align-items: center;
+.menu {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 
 .navbar a:hover {
-	color: #FEA725;
-    text-decoration: underline;
-    text-decoration-color: #ffc400;
+  color: #fea725;
+  text-decoration: underline;
+  text-decoration-color: #ffc400;
 }
 
-
-.nav-button{
-    padding: 1rem;
-    background-color: white;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 0.8rem;
-    border-color: black;
-    max-height: 4rem;
-    margin-left: 1rem;
+.nav-button {
+  padding: 1rem;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-color: black;
+  max-height: 4rem;
+  margin-left: 1rem;
 }
 
-.projects-button{
-    padding: 1rem;
-    background-color: white;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 0.8rem;
-    border-color: black;
-    max-height: 4rem;
+.projects-button {
+  padding: 1rem;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-color: black;
+  max-height: 4rem;
 }
 
-.projects-button:hover{
-    background-color: #000000;
-    color: white;
+.projects-button:hover {
+  background-color: #000000;
+  color: white;
 }
 
-.nav-button:hover{
-    background-color: #000000;
-    color: white;
+.nav-button:hover {
+  background-color: #000000;
+  color: white;
 }
 
-hr{
-    color: #000000;
+hr {
+  color: #000000;
 }
 
-/* --------- HERO --------- */ 
+/* --------- HERO --------- */
 
 main {
-    margin: 0 auto;
-    grid-gap: 1em;
-    max-width: 80vw;
+  margin: 0 auto;
+  grid-gap: 1em;
+  max-width: 80vw;
 }
 
 .hero {
-display: flex;
-flex-direction: column;
-margin-top: 3rem;
-margin-bottom: 3rem;
-align-items: center;
-justify-content: center;
-max-width: 60%;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 60%;
+  text-align: center;
 }
 
-.hero-buttons{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5rem;
-    font-size: 1.5rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    border-color: black;
-    margin: 1rem;
-    
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  border-color: black;
+  margin: 1rem;
 }
 
-.dividor{
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    height: auto;
-    max-width: 70%;
+.dividor {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  height: auto;
+  max-width: 70%;
 }
 
+/* --------- PROJECTS --------- */
 
-
-/* --------- PROJECTS --------- */ 
-
-.projects-container{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.project-card{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 2rem;
-    max-width:30.5rem;
+.project-card {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 2rem;
+  max-width: 30.5rem;
 }
 
-.button{ /* -- source:https://www.w3schools.com/howto/howto_css_outline_buttons.asp-- */
-    padding: 1rem;
-    background-color: white;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    border-color: black;
-    margin: 1rem;
-} 
-
-.button:hover{
-    background-color: #000000;
-    color: white;
+.button {
+  /* -- source:https://www.w3schools.com/howto/howto_css_outline_buttons.asp-- */
+  padding: 1rem;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  border-color: black;
+  margin: 1rem;
 }
 
-
+.button:hover {
+  background-color: #000000;
+  color: white;
+}
 
 /* --------- FOOTER ------*/
 
-footer{
-    display: inline-block;
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #fea725;
 }
 
-
-
-
-
-/* ---
-.footer-links-container{
-    display: flex;
-    flex-direction: column;
-    padding: auto;
+.footer-logo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background: lightblue;
+  justify-self: center;
+  align-self: center;
+}
+.footer-content {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  background: rgb(222, 189, 92);
+}
+.creative-process {
+  grid-column-start: 6;
+  grid-column-end: 11;
+  background: rgb(209, 87, 138);
+  display: flex;
+  flex-direction: row;
+}
+.footer-list {
+  background: limegreen;
+  display: flex;
+  flex-direction: row;
+}
+.social-media {
+  grid-column-start: 11;
+  grid-column-end: 13;
+  background: rgb(195, 219, 227);
 }
 
-footer{
-    display: inline-block;
-    margin: 1rem;
-    background-color: #FEA725;
+.social-media-logos {
+  border-radius: 2rem;
+  border: 2px solid red;
+  padding: 0.5rem;
 }
 
-/* ---
-.creative-process-content{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    padding: 1rem;
-    max-width: 30%;
+/* --------- ABOUT ME PAGE --------- */
+.about-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+.about-content {
+  margin: 1rem;
 }
 
-.creative-process{
-    display: flex;
-    flex-direction: row;
+.my-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.skills-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.footer-links{
-    display: flex;
-    flex-direction: row;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1rem;
+  border: 2px solid black;
+  padding: 2rem;
+  margin: 1.5rem;
+  width: 20rem;
+  height: 22rem;
 }
 
-.footer-content{
-    max-width: 30%;
-    margin: 1rem;
-}-----*/
-
-
-
-
-/* --------- ABOUT ME PAGE --------- */ 
-.about-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    margin-top: 3rem;
-}
-.about-content{
-    margin: 1rem;
+.photo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.my-skills{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-.skills-cards{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;  
+.photo-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 3rem;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    border: 1rem;
-    border:2px solid black;
-    padding: 2rem;
-    margin: 1.5rem;
-    width: 20rem;
-    height: 22rem;
-}
-
-.photo{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.photo-content{
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    margin: 3rem;
-}
-
-.about-background{
-    background-position:right 3em bottom 10px; ;
+.about-background {
+  background-position: right 3em bottom 10px;
 }
 
 /* --------- CONTACT FORM --------- */
 
-
-.contact-title{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start
+.contact-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-input[type=text], select, textarea {
-    width: 100%; 
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    padding: 1rem; 
-    border: 1px solid #000000; 
-    box-sizing: border-box; 
-    margin-top: 1rem; 
-    margin-bottom: 1rem; 
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
-  input[type=text], label {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-  }
-  
+input[type="text"],
+label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
 
-  input[type=submit] {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border:1px solid black;
-    padding: 12px 20px;
-    cursor: pointer;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-  }
-  
+input[type="submit"] {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
 
-  input[type=submit]:hover {
-    background-color: #000000;
-    color: #ffffff;
-    border: 1px;
-  }
-  
-  .container {
-    border-radius: 5px;
-    padding: 20px;
-    max-width: 80%;
-  }
+input[type="submit"]:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px;
+}
 
-
-
-
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 80%;
+}
