@@ -76,7 +76,8 @@ p{
 
 .navbar {
 	display: flex;
-	align-items: left;
+    flex-direction: row;
+	justify-content: flex-end;
 	width: 100%;
 	margin: 0 auto;
     padding: 1rem;
@@ -104,7 +105,7 @@ p{
 }
 
 .navbar a:hover {
-	color: #ffc400;
+	color: #FEA725;
     text-decoration: underline;
     text-decoration-color: #ffc400;
 }
@@ -118,6 +119,22 @@ p{
     font-size: 0.8rem;
     border-color: black;
     max-height: 4rem;
+    margin-left: 1rem;
+}
+
+.projects-button{
+    padding: 1rem;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-color: black;
+    max-height: 4rem;
+}
+
+.projects-button:hover{
+    background-color: #000000;
+    color: white;
 }
 
 .nav-button:hover{
@@ -125,11 +142,16 @@ p{
     color: white;
 }
 
+hr{
+    color: #000000;
+}
+
 /* --------- HERO --------- */ 
 
 main {
     margin: 0 auto;
     grid-gap: 1em;
+    max-width: 80vw;
 }
 
 .hero {
@@ -157,7 +179,7 @@ text-align: center;
 }
 
 .dividor{
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
     height: auto;
     max-width: 70%;
@@ -199,14 +221,30 @@ text-align: center;
 
 
 
-/* --------- FOOTER --------- */ 
+/* --------- FOOTER ------*/
 
-.footer{
-    display: flex;
-    flex-direction: row;
-    margin: 1rem;
+footer{
+    display: inline-block;
 }
 
+
+
+
+
+/* ---
+.footer-links-container{
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+}
+
+footer{
+    display: inline-block;
+    margin: 1rem;
+    background-color: #FEA725;
+}
+
+/* ---
 .creative-process-content{
     display: flex;
     flex-direction: row;
@@ -227,11 +265,122 @@ text-align: center;
 
 .footer-content{
     max-width: 30%;
-}
+    margin: 1rem;
+}-----*/
+
+
 
 
 /* --------- ABOUT ME PAGE --------- */ 
+.about-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+.about-content{
+    margin: 1rem;
+}
 
+.my-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.skills-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;  
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1rem;
+    border:2px solid black;
+    padding: 2rem;
+    margin: 1.5rem;
+    width: 20rem;
+    height: 22rem;
+}
+
+.photo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.photo-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 3rem;
+}
+
+.about-background{
+    background-position:right 3em bottom 10px; ;
+}
+
+/* --------- CONTACT FORM --------- */
+
+
+.contact-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1rem; 
+    border: 1px solid #000000; 
+    box-sizing: border-box; 
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  input[type=text], label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+  }
+  
+
+  input[type=submit] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border:1px solid black;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+  
+
+  input[type=submit]:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px;
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 80%;
+  }
 
 
 

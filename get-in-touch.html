@@ -34,50 +34,64 @@
 	
 	<main>
 		
-		<section class="hero">
-			<h1>GET IN TOUCH</h1>
-			<h2>I specialize in crafting unique user experiences with unique design. Through UX, UI and graphic design, I create positive interactions based on research fundamentals.</h2>
-		</section> <!-- #end of hero -->
+		<section class="contact-title">
+			<h1>Get in Touch</h1>
+			<h2>Please, fill in this form to contact me.</h2>
+		</section> <!-- #end of title -->
 
-		<img src="img/vector.png" alt="Icon of a vector" width="52" height="52">
-		<hr class="half-line">
-		<div class="projects-container">
-		<section class="project-card">
-			<img src="img/whow-project-cover.jpg" alt="a macbook open, showing a the home page of the website." width="491" height="357">
-			<h3>Women Helping other Women</h3>
-			<h4>UI UX DESIGN</h4>
-				<p>This  student project aims to improve the visual aesthetics and user experience of a existing website, while using modules and ensuring a seamless navigation.</p>
-				<button class="nav-button">Go to project</button>
-			</section> <!-- #end of project 1 -->
-			
-			<section class="project-card">
-				<img src="img/ubi-cover.jpg" alt="a hand holding an iphone with the home page of the app." width="491" height="357">
-				<h3>UBI Circles</h3>
-				<h4>UI UX DESIGN</h4>
-					<p>This project navigates in user experience strategy where we did research in the Beta version of this product and proposed improvements based on interviews and prototype testing.</p>
-					<button class="button">Go to project</button>
-				</section> <!-- #end of project 2 -->
-			</div>
-			</main>
+	
+		<hr>
 
-			<hr>
+		<div class="container">
+			<form action="action_page.php">
+		  
+			  <label for="fname">First Name</label>
+			  <input type="text" id="fname" name="firstname" placeholder="Your name...">
+		  
+			  <label for="lname">Last Name</label>
+			  <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+			  <label for="lname">Email</label>
+			  <input type="text" id="email" name="email" placeholder="Your email...">
+		  
+			  <label for="requierement">Requirement</label>
+			  <select id="requirement" name="requirement">
+				<option value="uxui">UX/UI</option>
+				<option value="graphicdesign">Graphic Design</option>
+				<option value="socialmedia">Social Media Management</option>
+			  </select>
+		  
+			  <label for="subject">Subject</label>
+			  <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+		  
+			  <input type="submit" value="Submit">
+		  
+			</form>
+		  </div>
+
+		  </main>
+
+		  <hr>
 
 			<footer>
 				<img src="img/footer-logo.png" alt="Websitelogo vertion 2" width="46" height="55">
-				<div>
+				<div clas="footer-content">
 					<h5>Thank you for watching</h5>
 					<p class="copyright">© Antonella Scarin 2024</p>
 				</div>
 
 				<div class="creative-process">
 				<img src="img/icon-footer.png" alt="icon of a computer2" width="50" height="45">
+				<div class="creative-process-content">
+				
 				<h5>Cretive process</h5>
-				<ul class="footer-list">
-					<li>Style Guides</li>
-					<li>Citations</li>
-					<li>GitHub</li>
-				</ul>
-			</div>
+				<div class="footer-links">
+					<a href="doc/styleguides.pdf"><p>Style Guides</p></a> <!-- source: how to link a PDF: https://www.google.com/search?q=how+to+button+to+a+pdf+html&oq=how+to+button+to+a+pdf+html&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhge0gEIOTI0N2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8#kpvalbx=_nmAbZqGfEbLN0PEPzuG7yAc_36 -->
+					<a href="doc/citations.pdf"><p>Citations</p></a>
+					<a href="https://github.com/AntonellaSL/portfolio2024"><p>GitHub</p></a>
+				</div>
+
+				</div>
 				
 				<div class="socialmedia">
 					<a class="social-media-logos" href="https://www.behance.net/antonellas0d31"><img src="img/behance.png" alt="behance logo" width="32" height="32"/></a>
