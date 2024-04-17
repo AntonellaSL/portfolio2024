@@ -48,7 +48,7 @@ h3 {
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
@@ -240,6 +240,7 @@ main {
 footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding: 1rem;
 }
 
 .footer-logo {
@@ -295,14 +296,14 @@ footer p{
 
 
 /* --------- ABOUT ME PAGE --------- */
+
+
 .about-title {
   margin-right: 5rem;
   margin-left: 5rem;
   margin-top: 5rem;
   margin-bottom: 3rem;
 }
-
-
 
 .my-skills {
   display: flex;
@@ -395,6 +396,17 @@ footer p{
 .design-stage{
   max-width: 90%;
 }
+
+.art-direction{
+  margin-top: 3rem;
+}
+
+.moodboard {
+  margin-top: 4rem;
+}
+
+
+
 /* --------- CONTACT FORM --------- */
 
 .contact-title {
