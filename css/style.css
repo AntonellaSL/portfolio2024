@@ -18,7 +18,6 @@ html {
 img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 1rem;
 }
 
 body {
@@ -45,6 +44,7 @@ h2 {
   font-weight: 400;
   font-size: 1.25rem;
   margin-bottom: 0;
+  margin-top: 3rem;
 }
 
 h3 {
@@ -53,6 +53,7 @@ h3 {
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 0;
+  margin-top: 2rem;
 }
 
 h4 {
@@ -62,7 +63,7 @@ h4 {
   font-size: 1rem;
   color: #7c7c7c;
   margin-bottom: 0;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 h5 {
@@ -79,6 +80,15 @@ p {
   font-weight: 400;
   font-size: 1rem;
   color: #7c7c7c;
+  margin-top: 1rem;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-icon{
+  padding-right: 1rem;
 }
 
 /* --------- NAV BAR --------- */
@@ -119,7 +129,7 @@ p {
   text-decoration-color: #ffc400;
 }
 
-.nav-button {
+.nav-button {   /* -- source:https://www.w3schools.com/howto/howto_css_outline_buttons.asp-- */
   padding: 1rem;
   background-color: white;
   font-family: "Montserrat", sans-serif;
@@ -132,6 +142,7 @@ p {
 
 .projects-button {
   padding: 1rem;
+  margin-top: 2rem;
   background-color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -165,7 +176,7 @@ main {
 .hero {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 7rem;
   margin-bottom: 3rem;
   align-items: center;
   justify-content: center;
@@ -173,16 +184,15 @@ main {
   text-align: center;
 }
 
-.hero-buttons {
+.hero-buttons {   /* -- source:https://www.w3schools.com/howto/howto_css_outline_buttons.asp-- */
   display: flex;
   flex-direction: row;
-  margin-top: 5rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
   border-color: black;
-  margin: 1rem;
 }
 
 .dividor {
@@ -199,6 +209,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .project-card {
@@ -209,65 +220,70 @@ main {
   max-width: 30.5rem;
 }
 
-.button {
-  /* -- source:https://www.w3schools.com/howto/howto_css_outline_buttons.asp-- */
-  padding: 1rem;
-  background-color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 0.8rem;
-  border-color: black;
-  margin: 1rem;
-}
-
 .button:hover {
   background-color: #000000;
   color: white;
 }
 
 /* --------- FOOTER ------*/
+/* ---James helped me building the grid during class. I worked on the alignments---*/
 
 footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-color: #fea725;
 }
 
 .footer-logo {
   grid-column-start: 1;
   grid-column-end: 3;
-  background: lightblue;
   justify-self: center;
   align-self: center;
 }
 .footer-content {
   grid-column-start: 3;
   grid-column-end: 6;
-  background: rgb(222, 189, 92);
+  justify-self: center;
+  align-self: center;
 }
 .creative-process {
   grid-column-start: 6;
   grid-column-end: 11;
-  background: rgb(209, 87, 138);
   display: flex;
   flex-direction: row;
+  justify-self: center;
+  align-self: center;
+}
+
+.creative-process-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.8rem;
 }
 .footer-list {
-  background: limegreen;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+}
+
+.footer-list-item {
+  padding-right: 0.5rem;
+}
+.footer-list-item:hover {
+  color: #fea725;
 }
 .social-media {
   grid-column-start: 11;
   grid-column-end: 13;
-  background: rgb(195, 219, 227);
+  justify-self: center;
+  align-self: center;
 }
 
-.social-media-logos {
-  border-radius: 2rem;
-  border: 2px solid red;
-  padding: 0.5rem;
+footer p{
+  color: #000000;
+  margin-top: 0.8rem;
+  text-decoration: none;
 }
+
 
 /* --------- ABOUT ME PAGE --------- */
 .about-title {
