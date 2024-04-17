@@ -24,18 +24,13 @@ body {
   background-color: #fffffa;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 h1 {
   font-family: "Unbounded", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 3rem;
-  margin-bottom: 0;
+  margin-bottom: 0rem;
 }
 
 h2 {
@@ -45,6 +40,7 @@ h2 {
   font-size: 1.25rem;
   margin-bottom: 0;
   margin-top: 3rem;
+  line-height: 150%;
 }
 
 h3 {
@@ -79,8 +75,9 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  color: #7c7c7c;
+  color: black;
   margin-top: 1rem;
+  line-height: 150%; /* ---https://developer.mozilla.org/en-US/docs/Web/CSS/line-height--*/
 }
 a{
   text-decoration: none;
@@ -168,10 +165,15 @@ hr {
 /* --------- HERO --------- */
 
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   grid-gap: 1em;
   max-width: 80vw;
+  align-items: left;
 }
+
 
 .hero {
   display: flex;
@@ -180,19 +182,26 @@ main {
   margin-bottom: 3rem;
   align-items: center;
   justify-content: center;
-  max-width: 60%;
+  max-width: 70%;
   text-align: center;
 }
 
 .hero-buttons {   /* -- source:https://www.w3schools.com/howto/howto_css_outline_buttons.asp-- */
-  display: flex;
-  flex-direction: row;
+  padding: 1rem;
   margin-top: 2rem;
-  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  background-color: white;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 0.8rem;
   border-color: black;
+  max-height: 4rem;
+}
+
+.hero-buttons:hover {
+  background-color: #000000;
+  color: white;
 }
 
 .dividor {
@@ -287,28 +296,27 @@ footer p{
 
 /* --------- ABOUT ME PAGE --------- */
 .about-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   margin-right: 5rem;
   margin-left: 5rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
-.about-content {
-  margin: 1rem;
-}
+
+
 
 .my-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 .skills-cards {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .card {
@@ -321,7 +329,7 @@ footer p{
   padding: 2rem;
   margin: 1.5rem;
   width: 20rem;
-  height: 22rem;
+  height: 25rem;
 }
 
 .photo {
@@ -330,25 +338,69 @@ footer p{
   align-items: flex-end;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 4rem;
+  align-self: center;
+  justify-content: center;
 }
 
 .photo-content {
   display: flex;
   flex-direction: column;
   max-width: 50%;
-  margin: 3rem;
+  margin: 4rem;
 }
 
 .about-background {
   background-position: right 3em bottom 10px;
 }
 
+.icon{
+  margin-top: 2rem;
+}
+
+
+/* --------- PROJECT 1 --------- */
+
+.hero-whow{
+  margin-top: 5rem;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.hero-whow p{
+  margin-top: 0.25rem;
+}
+
+.overview{
+  background-color: white;
+  border: solid;
+  border-color: black;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.galerie{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.galerie-item{
+  margin: 1rem;
+}
+
+.design-stage{
+  max-width: 90%;
+}
 /* --------- CONTACT FORM --------- */
 
 .contact-title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  margin-top: 5rem;
+  text-align: left;
+  max-width: 80%;
 }
 
 input[type="text"],
@@ -393,4 +445,5 @@ input[type="submit"]:hover {
   border-radius: 5px;
   padding: 20px;
   max-width: 80%;
+  margin-bottom: 5rem;
 }
