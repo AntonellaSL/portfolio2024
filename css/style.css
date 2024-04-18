@@ -88,7 +88,7 @@ a{
   padding-right: 1rem;
 }
 
-/* --------- NAV BAR --------- */
+/* ------------------- NAV BAR ------------------- */
 
 .navbar {
   display: flex;
@@ -162,7 +162,7 @@ hr {
   color: #000000;
 }
 
-/* --------- HERO --------- */
+/* ----------------- HERO AREA / INDEX ----------------- */
 
 main {
   display: flex;
@@ -211,7 +211,7 @@ main {
   max-width: 70%;
 }
 
-/* --------- PROJECTS --------- */
+/* ------------------ PROJECTS/INDEX ----------------- */
 
 .projects-container {
   display: flex;
@@ -234,7 +234,173 @@ main {
   color: white;
 }
 
-/* --------- FOOTER ------*/
+
+
+/* ----------------- ABOUT ME PAGE ----------------- */
+
+
+.about-title {
+  margin-right: 5rem;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.my-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+.skills-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1rem;
+  border: 2px solid black;
+  padding: 2rem;
+  margin: 1.5rem;
+  width: 20rem;
+  height: 27rem;
+}
+
+.photo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 4rem;
+  align-self: center;
+  justify-content: center;
+}
+
+.photo-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 4rem;
+}
+
+.about-background {
+  background-position: right 3em bottom 10px;
+}
+
+.icon{
+  margin-top: 2rem;
+}
+
+
+/* ----------------- PROJECT 1:WHOW ---------------- */
+
+.hero-whow{
+  margin-top: 5rem;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.hero-whow p{
+  margin-top: 0.25rem;
+}
+
+.overview{
+  flex-wrap: wrap;
+  background-color: white;
+  border: solid;
+  border-color: black;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.galerie{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.galerie-item{
+  margin: 1rem;
+}
+
+
+.art-direction{
+  margin-top: 3rem;
+}
+
+.moodboard {
+  margin-top: 4rem;
+}
+
+
+
+/* ------------------- CONTACT FORM ------------------- */
+
+.contact-title {
+  margin-top: 5rem;
+  text-align: left;
+  max-width: 80%;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type="text"],
+label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 80vw;
+  margin-bottom: 5rem;
+}
+
+
+/* ------------------- FOOTER ----------------*/
 /* ---James helped me building the grid during class. I worked on the alignments---*/
 
 footer {
@@ -292,170 +458,4 @@ footer p{
   color: #000000;
   margin-top: 0.8rem;
   text-decoration: none;
-}
-
-
-/* --------- ABOUT ME PAGE --------- */
-
-
-.about-title {
-  margin-right: 5rem;
-  margin-left: 5rem;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-}
-
-.my-skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 5rem;
-  margin-top: 2rem;
-}
-.skills-cards {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  border: 1rem;
-  border: 2px solid black;
-  padding: 2rem;
-  margin: 1.5rem;
-  width: 20rem;
-  height: 25rem;
-}
-
-.photo {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 4rem;
-  align-self: center;
-  justify-content: center;
-}
-
-.photo-content {
-  display: flex;
-  flex-direction: column;
-  max-width: 50%;
-  margin: 4rem;
-}
-
-.about-background {
-  background-position: right 3em bottom 10px;
-}
-
-.icon{
-  margin-top: 2rem;
-}
-
-
-/* --------- PROJECT 1 --------- */
-
-.hero-whow{
-  margin-top: 5rem;
-  text-align: left;
-  margin-bottom: 4rem;
-}
-
-.hero-whow p{
-  margin-top: 0.25rem;
-}
-
-.overview{
-  background-color: white;
-  border: solid;
-  border-color: black;
-  padding: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
-}
-
-.galerie{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.galerie-item{
-  margin: 1rem;
-}
-
-.design-stage{
-  max-width: 90%;
-}
-
-.art-direction{
-  margin-top: 3rem;
-}
-
-.moodboard {
-  margin-top: 4rem;
-}
-
-
-
-/* --------- CONTACT FORM --------- */
-
-.contact-title {
-  margin-top: 5rem;
-  text-align: left;
-  max-width: 80%;
-}
-
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  padding: 1rem;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-input[type="text"],
-label {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-}
-
-input[type="submit"] {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border: 1px solid black;
-  padding: 12px 20px;
-  cursor: pointer;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 0.8rem;
-}
-
-input[type="submit"]:hover {
-  background-color: #000000;
-  color: #ffffff;
-  border: 1px;
-}
-
-.container {
-  border-radius: 5px;
-  padding: 20px;
-  max-width: 80%;
-  margin-bottom: 5rem;
 }
