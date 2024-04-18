@@ -10,12 +10,17 @@ html {
 }
 
 /* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. 
-	If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. 
-	https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry/borderBoxSize */
+If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. 
+https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry/borderBoxSize */
 
 /* ------------ PARAGRAPH, BACKGROUND AND TEXT STYLES ------------ */
 
 img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
   max-width: 100%;
   height: auto;
 }
@@ -137,6 +142,25 @@ a{
   margin-left: 1rem;
 }
 
+
+.end-button {   /* -- source:https://www.w3schools.com/howto/howto_css_outline_buttons.asp-- */
+  padding: 1rem;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-color: black;
+  max-height: 4rem;
+  margin-top: 3rem;
+}
+
+.end-button:hover {   /* -- source:https://www.w3schools.com/howto/howto_css_outline_buttons.asp-- */
+  background-color: rgb(0, 0, 0);
+color: white;
+  border-color: black;
+
+}
+
 .projects-button {
   padding: 1rem;
   margin-top: 2rem;
@@ -162,16 +186,18 @@ hr {
   color: #000000;
 }
 
+.half-line{
+  width:80vw;
+}
+
 /* ----------------- HERO AREA / INDEX ----------------- */
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 auto;
   grid-gap: 1em;
+  padding: 1rem;
   max-width: 80vw;
-  align-items: left;
+  
 }
 
 
@@ -182,7 +208,7 @@ main {
   margin-bottom: 3rem;
   align-items: center;
   justify-content: center;
-  max-width: 70%;
+  max-width: 80vw;
   text-align: center;
 }
 
@@ -208,7 +234,7 @@ main {
   margin-top: 2rem;
   margin-bottom: 5rem;
   height: auto;
-  max-width: 70%;
+  max-width: 80vw;
 }
 
 /* ------------------ PROJECTS/INDEX ----------------- */
@@ -288,7 +314,7 @@ main {
 .photo-content {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 50vw;
   margin: 4rem;
 }
 
@@ -329,6 +355,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .galerie-item{
@@ -342,6 +369,10 @@ main {
 
 .moodboard {
   margin-top: 4rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
 }
 
 
@@ -351,7 +382,7 @@ main {
 .contact-title {
   margin-top: 5rem;
   text-align: left;
-  max-width: 80%;
+  max-width: 80vw;
 }
 
 input[type="text"],
